@@ -21,9 +21,13 @@
                     "\n------------------------------------------------------" +
                     "\nDigite a opção desejada: ";
 
+
+
                 Console.WriteLine(menu);
                 opcao = Convert.ToInt32(Console.ReadLine());
 
+
+                Console.ForegroundColor = ConsoleColor.Green;
                 switch (opcao)
                 {
                     case 1:
@@ -50,6 +54,7 @@
                         //sair
                         break;
                 }
+                Console.ResetColor();
 
                 Console.Clear();
             }
