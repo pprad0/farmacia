@@ -8,7 +8,7 @@ namespace Farmacia.Repository
         public void CriarProduto(Produto produto);
         public void ListarProdutos();
         public void ConsultarProdutoPorId(int id);
-        public void AtualizarProduto();
+        public void AtualizarProduto(Produto produto);
         public void DeletarProduto(int id);
     }
 }

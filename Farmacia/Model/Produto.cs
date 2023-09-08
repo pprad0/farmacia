@@ -1,6 +1,6 @@
 ﻿namespace Farmacia.Model
 {
-    public class Produto
+    public abstract class Produto
     {
         private int id, tipo;
         private string nome;
@@ -27,16 +27,14 @@
 
         public virtual void Visualizar()
         {
-            string mensagem = $" Número do produto: {this.id}" +
-                $" Nome: {this.nome}" +
-                $" Tipo: {this.tipo}" +
-                $" Preço: {this.preco}";
+            string mensagem =
+                "\n------------------------------------------------------" +
+                $"\t\n Número do produto: {this.id}" +
+                $"\t\n Nome: {this.nome}" +
+                $"\t\n Tipo: {this.tipo}" +
+                $"\t\n Preço: {this.preco}";
 
             Console.WriteLine(mensagem);
         }
-
-
-
-
     }
 }
